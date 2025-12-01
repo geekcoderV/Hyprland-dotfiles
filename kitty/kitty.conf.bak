@@ -1,0 +1,135 @@
+# --- Kitty Configuration File ---
+
+# Documentation: https://sw.kovidgoyal.net/kitty/conf/
+
+# ====================================================================
+
+# APPEARANCE & LAYOUT
+
+# ====================================================================
+
+#Set the font family and size
+
+font_family      Hack Nerd Font Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size        14
+
+# Window layout and padding
+
+initial_window_width  120c
+initial_window_height 35c
+window_padding_width 10
+
+# Set a subtle background opacity for a floating effect (0.0 to 1.0)
+
+# A value less than 1.0 requires a compositor (like picom or Windows/macOS)
+
+# background_opacity 0.95
+
+# Disable font ligatures, which can sometimes interfere with code
+
+# disable_ligatures cursor
+
+# Set the tab bar appearance
+
+tab_bar_style powerline
+tab_title_template "{index}: {title}"
+
+# ====================================================================
+
+# COLORS (Dark Modern Theme - Gruvbox Dark)
+
+# ====================================================================
+
+# Background and Foreground
+
+background #282828
+foreground #ebdbb2
+cursor     #fe8019
+
+# Selection colors
+
+selection_foreground #282828
+selection_background #d5c4a1
+
+# Black (0-8)
+
+color0  #282828
+color8  #928374
+
+# Red (1-9)
+
+color1  #cc241d
+color9  #fb4934
+
+# Green (2-10)
+
+color2  #98981b
+color10 #b8bb26
+
+# Yellow (3-11)
+
+color3  #d79921
+color11 #fabd2f
+
+# Blue (4-12)
+
+color4  #458588
+color12 #83a598
+
+# Magenta (5-13)
+
+color5  #b16286
+color13 #d3869b
+
+# Cyan (6-14)
+
+color6  #689d6a
+color14 #8ec07c
+
+# White (7-15)
+
+color7  #a89984
+color15 #ebdbb2
+
+# ====================================================================
+
+# KEYBOARD SHORTCUTS & BEHAVIOR
+
+# ====================================================================
+
+# Use ctrl+shift+w to close an OS window without confirmation
+
+confirm_os_window_close 0
+
+# Scrollback history in lines
+
+scrollback_lines 10000
+
+# Increase or decrease font size with Ctrl+Shift+Plus/Minus
+
+map ctrl+shift+plus  change_font_size all +2.0
+map ctrl+shift+minus change_font_size all -2.0
+map ctrl+shift+backspace change_font_size all 0
+
+# Open a new window (OS Window)
+
+map ctrl+shift+enter new_os_window
+
+# Split the current window vertically and horizontally
+
+map ctrl+shift+v  split_window vertically
+map ctrl+shift+h  split_window horizontally
+
+# Navigate splits (vim-style)
+
+map ctrl+shift+left  neighboring_window left
+map ctrl+shift+right neighboring_window right
+map ctrl+shift+up    neighboring_window up
+map ctrl+shift+down  neighboring_window down
+
+# Maximize/Restore the current window
+
+map ctrl+shift+f11 toggle_maximized_window

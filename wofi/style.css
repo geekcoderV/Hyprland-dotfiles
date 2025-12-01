@@ -1,0 +1,47 @@
+/* GLOBAL STYLES */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    border-radius: 8px; /* Rounded corners globally */
+}
+
+/* 1. Main Window Container */
+window {
+    background-color: rgba(30, 34, 42, 0.95); /* Dark background with slight transparency */
+    color: #ECEFF4;                           /* Light text */
+    
+    /* Centering the window (Example: 400px wide, centered) */
+    width: 400px;
+    margin: 200px auto 0 auto; /* Top margin to move it down a bit */
+}
+
+/* 2. Search Input Box */
+#input {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #5E81AC; /* Blue border accent */
+    background-color: #3B4252; /* Slightly lighter box for input */
+    color: #ECEFF4;
+}
+
+/* 3. List Item Results (Unselected) */
+listitem {
+    padding: 5px;
+    margin: 2px;
+}
+
+/* 4. Selected List Item */
+listitem:selected {
+    background-color: #5E81AC; /* Accent color for selection */
+    color: #D8DEE9;
+}
+
+/* 5. Scrollbar (Optional, for vertical list) */
+#scroll {
+    background-color: transparent;
+}
+
+/* 6. Prompt Text (e.g., " Run:") */
+#text {
+    color: #8053eb; /* Green accent for the prompt */
+}

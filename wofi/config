@@ -1,0 +1,33 @@
+# --- Behavior and Appearance Options ---
+
+# Run as a window (default) or fullscreen (useful for lockscreens)
+mode=drun
+
+# The prompt shown in the search bar (e.g., "Run:")
+prompt= Run:
+
+# Sort the results (true or false)
+sort=true
+
+# Show the icons next to applications (highly recommended)
+show_icons=true
+
+# Hide the background of the window
+allow_markup=false
+
+# Maximum number of lines/results to display
+lines=10
+
+# Allow multi-monitor selection
+allow_exclusivity=true
+
+# --- Customizing Modes (Optional) ---
+
+# Example: Customizing the `run` mode specifically
+[run]
+prompt= Execute:
+lines=15
+
+# Example: Customizing the `drun` mode specifically
+[drun]
+# This uses the same settings as the global mode, but can be overridden here

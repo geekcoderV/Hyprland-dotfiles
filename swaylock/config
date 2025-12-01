@@ -1,0 +1,53 @@
+# --- 🖼️ Background Configuration ---
+# Set the path to your desired lock screen image.
+image=/home/user/Pictures/wallpapers/lock_screen.png
+# Scaling mode: 'fill' covers the screen, 'fit' shows the whole image.
+scaling=fill
+
+# Fallback color if the image fails (RRGGBBAA format: black with 50% transparency)
+color=00000080
+
+# --- 💡 Indicator Appearance ---
+# Sets the indicator to show even when idle, not just on keypress.
+indicator-idle-visible
+
+# Indicator dimensions
+indicator-radius=80
+indicator-thickness=6
+
+# Hide the indicator on input error (incorrect password)
+# Don't show the password input circle after an error.
+hide-keyboard-layout
+
+# --- 🖋️ Text and Font ---
+font=FantasqueSansMono Nerd Font
+font-size=24
+text-color=D8DEE9  # Light gray text
+
+# Show the failed login attempt counter
+show-failed-attempts
+
+# --- 🌈 State Colors (The Core of Customization) ---
+# Format: RRGGBB[AA]
+
+# Default state (Waiting for input or idle)
+ring-color=3B4252    # Dark gray ring
+inside-color=00000000 # Transparent inside
+
+# State when typing after an error or a successful clear
+ring-clear-color=FFC107  # Yellow ring
+inside-clear-color=00000000
+text-clear-color=FFC107
+
+# Verifying state (The moment you press Enter)
+ring-ver-color=A3BE8C   # Green ring (Success look)
+inside-ver-color=00000000
+text-ver-color=A3BE8C
+
+# Wrong password state
+ring-wrong-color=BF616A  # Red ring (Error look)
+inside-wrong-color=00000000
+text-wrong-color=BF616A
+
+# Color of the highlight on key press (brief flash on the ring)
+key-hl-color=8800FF
